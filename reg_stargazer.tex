@@ -1,0 +1,32 @@
+\begin{table}[!htbp] \centering
+  \caption{Logit: False positive (human code)}
+\begin{tabular}{@{\extracolsep{5pt}}lccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+& \multicolumn{3}{c}{\textit{Dependent variable: FP}} \
+\cr \cline{2-4}
+\\[-1.8ex] & \multicolumn{1}{c}{Baseline} & \multicolumn{1}{c}{+ Composite Verbosity} & \multicolumn{1}{c}{+ Composite Verbosity, Templatedness, Interaction}  \\
+\\[-1.8ex] & (1) & (2) & (3) \\
+\hline \\[-1.8ex]
+ Intercept & -2.205$^{***}$ & -2.236$^{***}$ & -2.246$^{***}$ \\
+& (0.108) & (0.111) & (0.112) \\
+ Tokens (z) & -0.243$^{}$ & -0.158$^{}$ & -0.106$^{}$ \\
+& (0.180) & (0.175) & (0.170) \\
+ Complexity (z) & 0.372$^{***}$ & 0.409$^{***}$ & 0.460$^{***}$ \\
+& (0.137) & (0.135) & (0.137) \\
+ Experience (z) & 0.081$^{}$ & 0.099$^{}$ & 0.100$^{}$ \\
+& (0.107) & (0.107) & (0.107) \\
+ Composite Verbosity (z) & & -0.331$^{**}$ & -0.346$^{**}$ \\
+& & (0.143) & (0.144) \\
+ Templatedness (z) & & & -0.137$^{}$ \\
+& & & (0.154) \\
+ Composite Verbosity × Templatedness & & & -0.400$^{**}$ \\
+& & & (0.183) \\
+\hline \\[-1.8ex]
+ Observations & 1000 & 1000 & 1000 \\
+ Pseudo $R^2$ & 0.015 & 0.025 & 0.034 \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:} & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}
