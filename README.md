@@ -7,7 +7,7 @@ Code for reproducing figures and statistics for **“Who is using AI to code? Gl
 
 ## Panel construction
 - `make_panel_data.py` — CLI script that reads `inputs/functions.csv`, `inputs/panel_with_libs_coarse.csv`, and `inputs/user_gender_experience.csv`, computes AI exposure moving averages, commit/library counts, demographics, and writes `outputs/panel_uq.parquet` with forward-filled AI lags and experience measures.
-- `generate_user_quarter_project_panel_refactored.ipynb` — Notebook pipeline that ingests `final_data/raw_data_encrypted.csv.zip` (plus optional clustering CSVs), builds commit-level aggregates, novelty metrics (libraries, top‑k pairs, commit combos), community enrichments, and writes a rectangularized user × project × quarter panel CSV.
+
 
 ## Statistical scripts
 - `country_comparison_ttest.py` — Welch t-tests of AI function shares across countries by year. Inputs: `inputs/country_functions.csv`, `inputs/functions.csv`. Outputs: CSV stats and LaTeX p-value matrices in `outputs/`.
